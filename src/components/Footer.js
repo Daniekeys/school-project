@@ -19,13 +19,8 @@ const Footer = () => {
         University of Ilorin
         </a>
         </div>
-        <div className=" hidden sm:flex items-center">
-            <Link to="/main" className="text-white mr-4">
-                Login
-            </Link>
-            <Link to="/main" className="text-white mr-4">
-                Register
-            </Link>
+        <div className=" hidden sm:flex items-center text-white pr-7">
+           Computer Engineering
         </div>
         </div>
   )

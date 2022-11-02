@@ -76,7 +76,7 @@ const Main = () => {
                Automated Control
               </h1>
               <p className="text-center text-lg">
-                    The system is designed to  
+                    The system is designed to automatically Switch on and off in respect to the assigned threeshod point. At lower level its Switches ON while at higher level its Switches OFF 
               </p>
             </div>
             <div className="flex flex-col justify-center items-center w-full  mx-auto rounded-lg bg-white space-y-2 p-2 shadow-lg">
