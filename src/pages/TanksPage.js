@@ -47,12 +47,12 @@ const TanksPage = () => {
       localStorage.setItem("tanks-data", JSON.stringify(newTanks));
     } else localStorage.setItem("tanks-data", JSON.stringify(tanks));
   }, [fetchRealTimeData]);
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     window.location.reload();
-  //   }, 30000);
-  //   return () => clearInterval(interval);
-  // }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      window.location.reload();
+    }, 20000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
       <MainHeader />

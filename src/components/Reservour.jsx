@@ -16,7 +16,7 @@ const Reservior = ({ info }) => {
      if (newValue * 2 > 100) {
        return 95;
      } else {
-       return Math.floor(newValue * 2);
+       return Math.floor(newValue * 2) + 10;
      }
   };
   const handleTime = () => {
