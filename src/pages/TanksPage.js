@@ -49,7 +49,9 @@ const TanksPage = () => {
   }, [fetchRealTimeData]);
   useEffect(() => {
     const interval = setInterval(() => {
-      window.location.reload();
+      // window.location.reload();
+      fetchRealTimeData();
+      
     }, 20000);
     return () => clearInterval(interval);
   }, []);
@@ -60,26 +62,24 @@ const TanksPage = () => {
         {loading ? (
           <div>Loading...</div>
         ) : (
-          tanks?.slice(1,4).map((info, index) => {
+          tanks?.slice(1, 4).map((info, index) => {
             return (
               <div className=" p-2 mb-4 " key={index}>
                 <SingleTank info={info} />
               </div>
             );
           })
-            
         )}
         {loading ? (
           <div>Loading...</div>
         ) : (
-          tanks?.slice(0,1).map((info, index) => {
+          tanks?.slice(0, 1).map((info, index) => {
             return (
               <div className=" p-2 mb-4 " key={index}>
                 <Reservior info={info} />
               </div>
             );
           })
-            
         )}
       </div>
       {/* <AddTank /> */}
