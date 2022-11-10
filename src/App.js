@@ -6,6 +6,7 @@ import TankOverview from './pages/TankOverview';
 import AddTank from './pages/AddTank';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import TestPage from './pages/TestPage';
 function App() {
   return (
     <div>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/tanks" component={TanksPage} />
           <Route path="/tankview" component={TankOverview} />
           <Route path="/addTank" component={AddTank} />
+          <Route path="/test" component={TestPage} />
           {/* <Route path="/tank/:id" component={TankOverview} /> */}
         </Switch>
       </Router>

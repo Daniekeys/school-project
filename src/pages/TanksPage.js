@@ -58,7 +58,7 @@ const TanksPage = () => {
   return (
     <>
       <MainHeader />
-      <div className="grid md:grid-cols-2 gap-8  mt-4 min-h-[calc(100vh-300px)]">
+      <div className="grid md:grid-cols-2 gap-4  h-full ">
         {loading ? (
           <div>Loading...</div>
         ) : (

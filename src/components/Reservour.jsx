@@ -90,14 +90,14 @@ const Reservior = ({ info }) => {
   // }, [data.level, info.id]);
   return (
     <>
-      <div className=" grid grid-cols-2 gap-4 cursor-pointer">
+      <div className=" grid grid-cols-2 gap-4 cursor-pointer h-full">
         <div className="col-auto">
-          <div className="bg-gray-300 h-96 flex items-end rounded-t-2xl ">
+          <div className="bg-gray-300 h-full min-h-full flex items-end rounded-t-2xl ">
             <div
               className={`w-full bg-pink-600  mb-30 flex rounded-t-2xl justify-center align-center `}
               style={{
                 height: levelNumber + "%",
-                maxHeight: "24rem",
+                // maxHeight: "24rem",
                 backgroundColor: " rgb(14 165 233)",
               }}
             >
